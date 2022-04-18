@@ -12,8 +12,8 @@ export default function NavLayout({ currentPage, handlePageChange }) {
             link: '#about'
         },
         {
-            title: 'Portfolio',
-            link: '#portfolio'
+            title: 'Projects',
+            link: '#projects'
         },
         {
             title: 'Contact',
@@ -29,7 +29,7 @@ export default function NavLayout({ currentPage, handlePageChange }) {
         <ul>
             {navbarPages.map((page) => (
                 <li className={currentPage === page.title ? 'navbarLinkActive' : 'navbarLink'}>
-                    <a href={page.link} onClick={() => handlePageChange(page.item)}>
+                    <a href={page.link} onClick={() => handlePageChange(page.title)}>
                         {page.title}
                     </a>
                 </li>
