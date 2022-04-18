@@ -1,12 +1,14 @@
 import './App.css';
 import Header from './components/Header';
-import Links from './components/Navbar';
+import Navbar from './components/Navbar';
+import About from './components/About';
 
 function App() {
   return (
     <div>
       <Header />
-      <Links />
+      <Navbar />
+      <About />
     </div>
   );
 }

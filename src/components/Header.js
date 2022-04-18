@@ -3,7 +3,7 @@ import '../styles/Header.css';
 
 export default function Header() {
     const style = {
-        backgroundImage:`url(${process.env.PUBLIC_URL+ "/header-img.png"})`,
+        backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/header-img.png"})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
