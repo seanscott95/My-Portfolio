@@ -5,15 +5,23 @@
     position: relative;
     top: -300px;
     background: rgb(255, 255, 255, 0.6);
-    color: rgb(2, 113, 2);
+    color: DarkSlateGrey;
 }
 
 .header {
-    border: 3px solid rgb(255, 255, 255, 0.5);
+    border-top: 3px solid rgb(255, 255, 255, 0.5);
+    border-bottom: 3px solid rgb(255, 255, 255, 0.5);
     position: relative;
-    top: -300px;
+    top: -340px;
     background: rgb(255, 255, 255, 0.6);
     text-align: center;
-    color: rgb(2, 113, 2);
+    color: DarkSlateGrey;
     padding: 10px 25px;
+}
+
+.single-line {
+    border-left: 3px solid rgb(255, 255, 255, 0.5);
+    height: 90px;
+    position: relative;
+    top: -340px;
 }

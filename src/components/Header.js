@@ -14,16 +14,19 @@ export default function Header() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        fontWeight: 'bold',
     }
     return (
         <div style={style} className="header-container">
             <div>
                 <h1 className="initials">SS</h1>
             </div>
+            <div className="single-line"></div>
             <header className="header">
                 <h1>SEAN SCOTT</h1>
                 <p>FULL-STACK WEB DEVELOPER</p>
             </header>
+            <div className="single-line"></div>
         </div>
     )
 }

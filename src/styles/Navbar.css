@@ -1,0 +1,29 @@
+.navbar {
+    text-align: center;
+    position: relative;
+    top: -680px;
+    left: 4px;
+    font-size: 20px;
+}
+
+.navbar-item {
+    border: 3px solid rgb(255, 255, 255, 0.5);
+    border-right: none;
+    background: rgb(255, 255, 255, 0.6);
+    text-align: center;
+    color: DarkSlateGrey;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.last-navbar-item {
+    border: 3px solid rgb(255, 255, 255, 0.5);
+    position: relative;
+    background: rgb(255, 255, 255, 0.6);
+    text-align: center;
+    color: DarkSlateGrey;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
