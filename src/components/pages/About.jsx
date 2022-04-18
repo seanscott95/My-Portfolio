@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../assets/images/avatar.png';
+import avatar from '../../assets/images/avatar.png';
 // import '../styles/About.css';
 
 export default function About() {
@@ -15,5 +15,5 @@ export default function About() {
                 and am very excited and intrigued to see what comes next.
             </p>
         </div>
-    )
+    );
 }
