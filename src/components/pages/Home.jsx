@@ -3,13 +3,12 @@ import '../../styles/Home.css';
 
 export default function Home() {
     const style = {
-        backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/header-img.png"})`,
+        backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/rocks.png"})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        color: 'white',
-        fontSize: '30px',
         height: '100vh',
+        fontSize: '30px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',

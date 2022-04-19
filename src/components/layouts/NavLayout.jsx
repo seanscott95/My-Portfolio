@@ -33,9 +33,7 @@ export default function NavLayout({ currentPage, handlePageChange }) {
         fontSize: '25px',
         listStyle: 'none',
         textDecoration: 'none',
-        backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/header-img.png"})`,
-        backgroundRepeat: 'repeat',
-        backgroundPosition: 'center',
+        background: '#1e2327',
         margin: '0px',
         padding: '30px',
 

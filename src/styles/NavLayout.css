@@ -1,6 +1,7 @@
 .navbarLinkActive {
-    border: 3px solid rgba(16, 148, 63, 0.7);
-    background: rgb(255, 255, 255, 0.6);
+    border: 3px solid rgba(54, 53, 53, 0.5);
+    /* border: 3px solid rgba(16, 148, 63, 0.7); */
+    /* background: rgb(255, 255, 255, 0.6); */
     padding: 10px 20px;
     margin: 20px;
     font-size: 30px;
@@ -10,8 +11,7 @@
 }
 
 .navbarLink {
-    border: 3px solid rgba(54, 53, 53, 0.5);
-    background: rgb(255, 255, 255, 0.6);
+    /* border: 3px solid rgba(54, 53, 53, 0.5); */
     padding: 10px 20px;
     margin: 20px;
     
@@ -19,7 +19,7 @@
 
 .anchor {
     text-decoration: none;
-    color: DarkSlateGrey;
+    color: whitesmoke;
     font-weight: bold;
     padding: 10px;
 }

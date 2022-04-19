@@ -1,12 +1,25 @@
 import React from 'react';
-import avatar from '../../assets/images/avatar.png';
-// import '../styles/About.css';
+// import avatar from '../../assets/images/avatar.png';
 
 export default function About() {
+
+    const style = {
+        backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/rock.png"})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontWeight: 'bold',
+    };
+
     return (
-        <div className='about'>
+        <div style={style}>
             <h1 className='about-title'>About</h1>
-            <image className="avatar" src={avatar} alt="My Avatar"></image>
+            {/* <image className="avatar" src={avatar} alt="My Avatar"></image> */}
             <p>
                 I am an aspiring Full Stack Web Developer. My background in Web Development is in the infant
                 stages but I have learnt many relatable and transferable skills through various fields of my

@@ -1,8 +1,22 @@
 import React from 'react';
 
 export default function Projects() {
+
+  const style = {
+    backgroundImage: `url(${process.env.PUBLIC_URL + "/images/sky.png"})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontWeight: 'bold',
+  };
+
   return (
-    <div>
+    <div style={style}>
       <h1>Projects</h1>
       <p>
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
