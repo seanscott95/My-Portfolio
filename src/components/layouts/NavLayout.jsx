@@ -26,24 +26,11 @@ export default function NavLayout({ currentPage, handlePageChange }) {
         },
     ];
 
-    const navbarStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        textAlign: 'center',
-        fontSize: '25px',
-        listStyle: 'none',
-        textDecoration: 'none',
-        background: '#1e2327',
-        margin: '0px',
-        padding: '30px',
-
-    }
-
     return (
-        <ul style={navbarStyle}>
+        <ul className='navbar'>
             {navbarPages.map((page) => (
                 <li className={currentPage === page.title ? 'navbarLinkActive' : 'navbarLink'}>
-                    <a className="anchor" href={page.link} onClick={() => handlePageChange(page.title)}>
+                    <a href={page.link} onClick={() => handlePageChange(page.title)}>
                         {page.title}
                     </a>
                 </li>
