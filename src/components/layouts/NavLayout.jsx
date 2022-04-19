@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/NavLayout.css'
+import '../../styles/NavLayout.css';
 
 export default function NavLayout({ currentPage, handlePageChange }) {
 
@@ -22,7 +22,7 @@ export default function NavLayout({ currentPage, handlePageChange }) {
         },
         {
             title: 'Resume',
-            link: ''
+            link: '../../../assets/Sean Scott Resume.pdf'
         },
     ];
 
