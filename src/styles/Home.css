@@ -1,28 +1,32 @@
+:root {
+    --border-color: rgb(255, 255, 255, 0.5);
+}
+
 .initials {
-    border: 3px solid rgb(255, 255, 255, 0.5);
-    border-radius: 50%;
-    padding: 15px 20px;
+    border: 3px solid var(--border-color);
+    border-radius: 90px;
+    padding: 12px 20px;
     position: relative;
     top: -260px;
     left: -300px;
-    background: rgb(255, 255, 255, 0.6);
+    background: rgb(255, 255, 255, 0.6); /*Different opacity to --border-color */
     color: DarkSlateGrey;
 }
 
 .header {
-    border-top: 3px solid rgb(255, 255, 255, 0.5);
-    border-bottom: 3px solid rgb(255, 255, 255, 0.5);
+    border-top: 3px solid var(--border-color);
+    border-bottom: 3px solid var(--border-color);
     position: relative;
     top: -300px;
     left: -300px;
-    background: rgb(255, 255, 255, 0.6);
+    background: rgb(255, 255, 255, 0.6); /*Different opacity to --border-color */
     text-align: center;
     color: DarkSlateGrey;
     padding: 10px 25px;
 }
 
 .single-line {
-    border-left: 3px solid rgb(255, 255, 255, 0.5);
+    border-left: 3px solid var(--border-color);
     height: 90px;
     position: relative;
     top: -300px;
