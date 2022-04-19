@@ -1,0 +1,25 @@
+.navbarLinkActive {
+    border: 3px solid rgba(16, 148, 63, 0.7);
+    background: rgb(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: rgba(16, 148, 63);
+}
+
+.navbarLink {
+    border: 3px solid rgba(54, 53, 53, 0.5);
+    background: rgb(255, 255, 255, 0.6);
+    padding: 10px 20px;
+    margin: 20px;
+    
+}
+
+.anchor {
+    text-decoration: none;
+    color: DarkSlateGrey;
+    font-weight: bold;
+    padding: 10px;
+}
