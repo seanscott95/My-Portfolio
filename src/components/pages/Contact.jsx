@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/Contact.css';
 
 export default function Contact() {
 
@@ -17,45 +18,16 @@ export default function Contact() {
     
   }
 
-  const formStyle = {
-    background: 'rgb(255, 255, 255, 0.6)',
-    width: '50%',
-    height: '30%',
-    borderRadius: '5px',
-    padding: '20px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    fontSize: '30px',
-    lineHeight: '2',
-    position: 'absolute',
-    top: '400px'
-  }
+  
 
-  const h1Style = {
-    position: 'absolute',
-    top: '300px',
-    color: 'white'
-  }
-
-  const btnStyle = {
-    width: '100px',
-    background: '#1e2327',
-    color: 'white',
-    fontWeight: 'bold',
-    margin: '20px',
-    padding: '5px',
-    fontSize: '20px',
-    borderRadius: '10px',
-    
-  }
+ 
 
   return (
     <div style={style}>
 
-      <h1 style={h1Style}>Contact Page</h1>
+      <h1 className="title" >Contact Page</h1>
 
-      <form style={formStyle}>
+      <form className='contactForm'>
         <label for='name'>Name</label>
         <input type='text' id='name' name='name' placeholder='Your name...' />
         
@@ -65,7 +37,7 @@ export default function Contact() {
         <label for='message'>Message</label>
         <textarea type='text' id='message' name='message' rows='5' placeholder='Your message...'></textarea>
 
-        <input style={btnStyle} type="submit" value="Send" />
+        <input type="submit" value="Send" className="sendButton" />
       </form>
     </div>
   );

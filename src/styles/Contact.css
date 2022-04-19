@@ -1,0 +1,42 @@
+.contactForm {
+    background: rgb(255, 255, 255, 0.6);
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 2;
+    position: absolute;
+    top: 400px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.title {
+    position: absolute;
+    top: 300px;
+    color: white;
+}
+
+.sendButton {
+    width: 100px;
+    background: #1e2327;
+    color: white;
+    font-weight: bold;
+    margin: 10px 250px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
