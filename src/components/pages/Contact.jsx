@@ -13,23 +13,60 @@ export default function Contact() {
     justifyContent: 'center',
     alignItems: 'center',
     fontWeight: 'bold',
+    color: '#1e2327',
+    
   }
+
+  const formStyle = {
+    background: 'rgb(255, 255, 255, 0.6)',
+    width: '50%',
+    height: '30%',
+    borderRadius: '5px',
+    padding: '20px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    fontSize: '30px',
+    lineHeight: '2',
+    position: 'absolute',
+    top: '400px'
+  }
+
+  const h1Style = {
+    position: 'absolute',
+    top: '300px',
+    color: 'white'
+  }
+
+  const btnStyle = {
+    width: '100px',
+    background: '#1e2327',
+    color: 'white',
+    fontWeight: 'bold',
+    margin: '20px',
+    padding: '5px',
+    fontSize: '20px',
+    borderRadius: '10px',
+    
+  }
+
   return (
     <div style={style}>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+
+      <h1 style={h1Style}>Contact Page</h1>
+
+      <form style={formStyle}>
+        <label for='name'>Name</label>
+        <input type='text' id='name' name='name' placeholder='Your name...' />
+        
+        <label for='email'>Email</label>
+        <input type='text' id='email' name='email' placeholder='Your email...' />
+
+        <label for='message'>Message</label>
+        <textarea type='text' id='message' name='message' rows='5' placeholder='Your message...'></textarea>
+
+        <input style={btnStyle} type="submit" value="Send" />
+      </form>
     </div>
   );
 }
