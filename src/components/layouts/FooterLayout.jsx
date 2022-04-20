@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin , faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 // import { Link } from 'react-router-dom';
+import '../../styles/FooterLayout.css'
 
 export default function FooterLayout() {
 
@@ -26,17 +27,17 @@ export default function FooterLayout() {
     ];
 
     return (
-        <div className="">
-            <ul>
+        <div className="footer">
+            <ul className='footerList'>
                 {footerLinks.map((item) => (
-                    <li>
+                    <li className='footerItem'>
                         {/* <Link to={item.link}> */}
-                            <FontAwesomeIcon icon={item.icon} />
+                            <FontAwesomeIcon icon={item.icon} size='2x' />
                         {/* </Link> */}
                     </li>
                 ))}
             </ul>
-            <p className="">Powered by Sean Scott</p>
+            <p className="footerCaption">Powered by Sean Scott</p>
         </div>
     );
 }
