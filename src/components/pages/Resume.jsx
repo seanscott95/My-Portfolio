@@ -4,7 +4,7 @@ import React from 'react';
 export default function Resume() {
 
     const style = {
-        backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/rock.png"})`,
+        backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/hills.png"})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
