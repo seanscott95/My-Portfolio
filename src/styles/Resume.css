@@ -1,3 +1,13 @@
+.resumeContainer {
+    color: rgb(30, 35, 39);
+    font-size: 25px;
+    padding: 20px;
+    background: rgb(30, 35, 39, .9);
+    border-radius: 10px;
+    margin: 150px 50px;
+    text-align: center;
+}
+
 .resumeInner {
     color: rgb(30, 35, 39);
     font-size: 25px;
@@ -13,33 +23,16 @@
 
 .resumeBtn {
     font-size: 20px;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.resumeContainer {
     color: rgb(30, 35, 39);
-    font-size: 25px;
-    padding: 20px;
-    background: rgb(30, 35, 39, .9);
-    border-radius: 10px;
-    margin: 50px;
-    text-align: center;
-}
-
-.resumeLink {
-    color: white;
-    font-size: 25px;
-    padding: 20px;
-    margin: 50px;
-    background: rgb(30, 35, 39, .9);
-    border-radius: 10px;
-    width: 400px;
-    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px 20px;
 }
 
 .resumeBtnText {
     color: white;
+}
+
+.bold {
+    font-weight: bold;
 }
