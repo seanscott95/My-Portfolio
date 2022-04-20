@@ -7,7 +7,7 @@ export default function Home() {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        height: '100vh',
+        height: '77.6vh',
         fontSize: '30px',
         display: 'flex',
         flexDirection: 'column',

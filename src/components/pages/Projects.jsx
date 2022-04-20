@@ -7,7 +7,7 @@ export default function Projects() {
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    height: '100vh',
+    height: '77.6vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
