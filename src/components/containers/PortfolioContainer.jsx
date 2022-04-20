@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import NavLayout from '../layouts/NavLayout';
+import FooterLayout from '../layouts/FooterLayout'
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Projects from '../pages/Projects';
@@ -30,6 +31,7 @@ export default function PortfolioContainer() {
       <NavLayout currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Calls the renderPage method which returns a component */}
       {renderPage()}
+      <FooterLayout />
     </div>
   );
 }
