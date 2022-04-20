@@ -1,0 +1,29 @@
+.about-title {
+    color: whitesmoke;
+    margin: 70px;
+    /* justify-content: start; */
+}
+
+.fakeImage {
+    height: 350px;
+    width: 350px;
+    background: black;
+    margin: 0px 200px;
+}
+
+.aboutInfo {
+    color: #1e2327;
+    font-size: 25px;
+    height: 350px;
+    width: 600px;
+    padding: 20px;
+    background: rgb(255, 255, 255, 0.5);
+    border-radius: 10px;
+    font-weight: bold;
+
+
+}
+
+.containerInfo {
+    display: flex;
+}
