@@ -22,7 +22,7 @@ export default function NavLayout({ currentPage, handlePageChange }) {
         },
         {
             title: 'Resume',
-            link: '../../../assets/Sean Scott Resume.pdf'
+            link: '#resume'
         },
     ];
 
