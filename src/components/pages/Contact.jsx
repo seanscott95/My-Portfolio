@@ -24,21 +24,22 @@ export default function Contact() {
 
   return (
     <div style={style}>
+      <div className='contactContainer'>
+        <h1 className="title" >Contact Page</h1>
 
-      <h1 className="title" >Contact Page</h1>
+        <form className='contactForm'>
+          <label for='name'>Name</label>
+          <input type='text' id='name' name='name' placeholder='Your name...' />
+          
+          <label for='email'>Email</label>
+          <input type='text' id='email' name='email' placeholder='Your email...' />
 
-      <form className='contactForm'>
-        <label for='name'>Name</label>
-        <input type='text' id='name' name='name' placeholder='Your name...' />
-        
-        <label for='email'>Email</label>
-        <input type='text' id='email' name='email' placeholder='Your email...' />
+          <label for='message'>Message</label>
+          <textarea type='text' id='message' name='message' rows='5' placeholder='Your message...'></textarea>
 
-        <label for='message'>Message</label>
-        <textarea type='text' id='message' name='message' rows='5' placeholder='Your message...'></textarea>
-
-        <input type="submit" value="Send" className="sendButton" />
-      </form>
+          <input type="submit" value="Send" className="sendButton" />
+        </form>
+      </div>
     </div>
   );
 }
