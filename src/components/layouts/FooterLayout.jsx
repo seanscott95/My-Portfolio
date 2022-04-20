@@ -1,22 +1,27 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin , faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { Link } from 'react-router-dom';
 
 export default function FooterLayout() {
 
     const footerLinks = [
         {
-            title: 'LinkedIn',
-            link: "https://www.linkedin.com/in/sean-scott-18ba07225/",
-            fa: "contact-icon fa-brands fa-linkedin fa-2xl"
+            icon: faGithub,
+            link: "https://github.com/seanscott95"
         },
         {
-            title: 'Email',
-            link: "mailto:seanms418@gmail.com",
-            fa: 'contact-icon fa-solid fa-envelope fa-2xl'
+            icon: faLinkedin,
+            link: "https://www.linkedin.com/in/sean-scott-18ba07225/"
         },
         {
-            title: 'GitHub',
-            link: "https://github.com/seanscott95",
-            fa: 'contact-icon fa-brands fa-github fa-2xl'
+            icon: faStackOverflow,
+            link: "https://stackoverflow.com/users/17353361/sean-scott"
+        },
+        {
+            icon: faEnvelope,
+            link: "mailto:seanms418@gmail.com"
         },
     ];
 
@@ -25,9 +30,9 @@ export default function FooterLayout() {
             <ul>
                 {footerLinks.map((item) => (
                     <li>
-                        <a href={item.link}>
-                            <i className={item.fa}></i>
-                        </a>
+                        {/* <Link to={item.link}> */}
+                            <FontAwesomeIcon icon={item.icon} />
+                        {/* </Link> */}
                     </li>
                 ))}
             </ul>
