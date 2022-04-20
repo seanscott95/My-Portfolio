@@ -1,0 +1,40 @@
+.resumeLanguages {
+    color: rgb(30, 35, 39);
+    font-size: 25px;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.resumeBtn {
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.resumeInfo {
+    color: rgb(30, 35, 39);
+    font-size: 25px;
+    padding: 20px;
+    background: rgb(30, 35, 39, .9);
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.resumeLink {
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    margin: 50px;
+    background: rgb(30, 35, 39, .9);
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
