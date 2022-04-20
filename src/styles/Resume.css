@@ -1,4 +1,4 @@
-.resumeLanguages {
+.resumeInner {
     color: rgb(30, 35, 39);
     font-size: 25px;
     width: 500px;
@@ -19,13 +19,14 @@
     font-weight: bold;
 }
 
-.resumeInfo {
+.resumeContainer {
     color: rgb(30, 35, 39);
     font-size: 25px;
     padding: 20px;
     background: rgb(30, 35, 39, .9);
     border-radius: 10px;
     margin: 50px;
+    text-align: center;
 }
 
 .resumeLink {
@@ -37,4 +38,8 @@
     border-radius: 10px;
     width: 400px;
     text-align: center;
+}
+
+.resumeBtnText {
+    color: white;
 }
