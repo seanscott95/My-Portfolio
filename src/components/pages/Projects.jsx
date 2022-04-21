@@ -15,22 +15,39 @@ export default function Projects() {
     fontWeight: 'bold',
   };
 
+  const projectStyle = {
+    backgroundImage: `url(${process.env.PUBLIC_URL + "/images/sky.png"})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontWeight: 'bold',
+    height: '500px',
+    width: '750px',
+  }
+
   return (
     <div style={style}>
-      <h1>Projects</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <div className='containerProjectsPage'>
+        <h1 className='containerTitle'>Projects</h1>
+        <div className='containerProjects'>
+          <div className='containerProjectInfo'>
+            <h2>Project Title</h2>
+            <p><span className='titleBold'>Collaborators: </span>Sean Scott</p>
+            <p>App Description</p>
+            <p>Note: App hosted on a free heroku server. Please allow 15-30 seconds to load the page.</p>
+            <a className="projectLinks" href="https://github.com/Black-Mandarin/Pet-Advocate-Welfare-System-PAWS-">
+              GitHub Link</a>
+            <a className="projectLinks" href="https://pet-advocate-welfare-system.herokuapp.com/">
+              Deployed Link</a>
+          </div>
+          <div style={projectStyle} className='projectBackground'></div>
+        </div>
+      </div>
     </div>
   );
 }
