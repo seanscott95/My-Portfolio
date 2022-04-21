@@ -46,6 +46,7 @@
     padding: 5px;
     margin: 0px 10px;
     border-radius: 10px;
+    transition: transform .2s;
 }
 
 .titleBold {
@@ -56,4 +57,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.projectBackground:hover, .projectLinks:hover {
+    transform: scale(1.1);
 }

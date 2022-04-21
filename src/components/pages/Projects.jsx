@@ -20,16 +20,16 @@ export default function Projects() {
     backgroundPosition: 'center',
     backgroundSize: 'cover',
 
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
+    // display: 'flex',
+    // flexDirection: 'column',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     height: '350px',
     width: '550px',
     padding: '20px',
     margin: '50px',
+    transition: 'transform .2s',
   }
-
 
   const projects = [
     {
