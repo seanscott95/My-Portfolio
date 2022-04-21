@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/Projects.css'
 
 export default function Projects() {
 
@@ -10,9 +11,7 @@ export default function Projects() {
     height: '77.6vh',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
     alignItems: 'center',
-    fontWeight: 'bold',
   };
 
   const projectStyle = {
@@ -25,19 +24,19 @@ export default function Projects() {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    fontWeight: 'bold',
-    height: '500px',
-    width: '750px',
+    height: '350px',
+    width: '550px',
   }
 
+  
   const projects = [
     {
-        title: '',
-        collaborators: '',
-        description: '',
-        githubLink: '',
-        deployedLink: '',
-        projectBackground: '',
+        title: 'Pet Animal Welfare System (PAWS)',
+        collaborators: 'Sean Scott, Ayako Woollan and Alan Cherian.',
+        description: 'Pet Booking system for a pet daycare centre. This booking system would be used by the staff of the pet daycare centre.',
+        githubLink: 'https://github.com/Black-Mandarin/Pet-Advocate-Welfare-System-PAWS-',
+        deployedLink: 'https://pet-advocate-welfare-system.herokuapp.com/',
+        // projectBackground: '',
     },
   ];
   
