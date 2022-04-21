@@ -30,20 +30,35 @@ export default function Projects() {
     width: '750px',
   }
 
+  const projects = [
+    {
+        title: '',
+        collaborators: '',
+        description: '',
+        githubLink: '',
+        deployedLink: '',
+        projectBackground: '',
+    },
+  ];
+  
   return (
     <div style={style}>
       <div className='containerProjectsPage'>
         <h1 className='containerTitle'>Projects</h1>
         <div className='containerProjects'>
           <div className='containerProjectInfo'>
-            <h2>Project Title</h2>
-            <p><span className='titleBold'>Collaborators: </span>Sean Scott</p>
-            <p>App Description</p>
-            <p>Note: App hosted on a free heroku server. Please allow 15-30 seconds to load the page.</p>
-            <a className="projectLinks" href="https://github.com/Black-Mandarin/Pet-Advocate-Welfare-System-PAWS-">
-              GitHub Link</a>
-            <a className="projectLinks" href="https://pet-advocate-welfare-system.herokuapp.com/">
-              Deployed Link</a>
+            {projects.map((projects) => (
+              <div className='projectCard'>
+                <h2>{projects.title}</h2>
+                <p><span className='titleBold'>Collaborators: </span>{projects.collaborators}</p>
+                <p>{projects.description}</p>
+                <p className='note'>Note: App hosted on a free heroku server. Please allow 15-30 seconds to load the page.</p>
+                <a className="projectLinks" href={projects.githubLink}>
+                  GitHub Link</a>
+                <a className="projectLinks" href={projects.deployedLink}>
+                  Deployed Link</a>
+              </div>
+            ))}
           </div>
           <div style={projectStyle} className='projectBackground'></div>
         </div>
