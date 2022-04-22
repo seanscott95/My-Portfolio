@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/About.css';
-// import avatar from '../../assets/images/avatar.png';
+import avatar from '../../assets/images/avatar.png';
 
 export default function About() {
 
@@ -19,7 +19,7 @@ export default function About() {
         <div style={style}>
             {/* <image className="avatar" src={avatar} alt="My Avatar"></image> */}
             <div className='containerInfo'>
-                <div className='fakeImage'></div>
+                <img src={avatar} alt='avatar' className="avatar" />
                 <div className='containerBackground'>
                     <h1 className='about-title'>About</h1>
                     <p className='aboutInfo'>
