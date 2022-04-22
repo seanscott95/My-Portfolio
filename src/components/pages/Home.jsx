@@ -7,7 +7,7 @@ export default function Home() {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        height: '77.6vh',
+        height: '78.4vh',
         fontSize: '30px',
         justifyContent: 'center',
         alignItems: 'center',

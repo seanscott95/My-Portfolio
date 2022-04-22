@@ -9,7 +9,7 @@ export default function Resume() {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        height: '77.6vh',
+        height: '78.4vh',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'flex-start',
