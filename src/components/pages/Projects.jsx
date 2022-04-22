@@ -84,10 +84,10 @@ export default function Projects() {
                   <p><span className='titleBold'>Collaborators: </span>{projects.collaborators}</p>
                   <p>{projects.description}</p>
                   <p className='note'>Note: App hosted on a free heroku server. Please allow 15-30 seconds to load the page.</p>
-                  <a className="projectLinks" href={projects.githubLink}>
-                    GitHub Link</a>
-                  <a className="projectLinks" href={projects.deployedLink}>
-                    Deployed Link</a>
+                  <a className="projectLinks" href={projects.githubLink}
+                    target='_blank' rel='noreferrer'>GitHub Link</a>
+                  <a className="projectLinks" href={projects.deployedLink}
+                    target='_blank' rel='noreferrer'>Deployed Link</a>
                 </div>
               </div>
               <img src={projects.image} alt='project' className='projectBackground' />
