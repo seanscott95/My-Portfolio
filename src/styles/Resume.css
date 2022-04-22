@@ -21,15 +21,24 @@
     text-align: center;
 }
 
-.resumeBtn {
+.resume {
     font-size: 20px;
     color: rgb(30, 35, 39);
+    background: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
     font-weight: bold;
     padding: 5px;
     margin: 5px 20px;
+    border: 2px solid black;
 }
 
-.resumeBtnText {
+.resume:hover {
+    transform: scale(1.4);
+    color: rgb(30, 35, 39, .7);
+    border: 2px solid black;
+}
+
+.resumeText {
     color: white;
 }
 

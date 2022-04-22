@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Resume.css';
+import resume from '../../assets/resume/Sean Scott Resume.pdf'
 
 export default function Resume() {
 
@@ -20,7 +21,8 @@ export default function Resume() {
         <div style={style}>
             <div className='resumeContainer'>
                 <p className='resumeInner bold'>To save you some time here is a list of my proficiencies:</p>
-                <span className="resumeBtnText">Click here for my resume: </span><button className='resumeBtn'>Resume</button>
+                <span className="resumeText">Click here for my resume: </span>
+                <a className='resume' href={resume} target='_blank' rel='noreferrer' >Resume</a>
             </div>
             <div className='resumeContainer'>
                 <p className='resumeInner'>
