@@ -3,6 +3,7 @@
     height: 350px;
     width: 350px;
     margin: 200px;
+    border-radius: 10px;
 }
 
 .containerBackground {
