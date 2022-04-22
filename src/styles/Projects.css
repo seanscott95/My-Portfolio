@@ -59,6 +59,13 @@
     align-items: center;
 }
 
+.projectBackground {
+    height: 350px;
+    width: 550px;
+    padding: 20px;
+    margin: 50px;
+    transition: transform .2s;
+}
 .projectBackground:hover, .projectLinks:hover {
     transform: scale(1.1);
 }
