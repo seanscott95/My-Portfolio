@@ -35,6 +35,9 @@ export default function Contact() {
     if (!inputValue) {
       setMouseOutErrorMessage('This field is required.');
       return;
+    } else {
+      setMouseOutErrorMessage('');
+      return
     }
   };
 
@@ -50,7 +53,7 @@ export default function Contact() {
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
     // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setName('');
+    setInterval(setName(''), 5000);
     setEmail('');
     setMessage('');
     setEmailErrorMessage('');
@@ -65,11 +68,11 @@ export default function Contact() {
         <form className='contactForm'>
           <label for='name'>Name</label>
           <input type='text' id='name' name='name' placeholder='Your name...' value={name}
-            onMouseOut={handleMouseOut} onChange={(e) => setName(e.target.value)}/>
+            onMouseOut={handleMouseOut} onChange={(e) => setName(e.target.value)} />
 
           <label for='email'>Email</label>
           <input type='email' id='email' name='email' placeholder='Your email...'
-            value={email} onMouseOut={handleMouseOut} onChange={(e) => setEmail(e.target.value)}/>
+            value={email} onMouseOut={handleMouseOut} onChange={(e) => setEmail(e.target.value)} />
 
           <label for='message'>Message</label>
           <textarea type='text' id='message' name='message' rows='5'
