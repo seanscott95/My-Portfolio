@@ -28,6 +28,7 @@ export default function Projects() {
       githubLink: 'https://github.com/Black-Mandarin/Pet-Advocate-Welfare-System-PAWS-',
       deployedLink: 'https://pet-advocate-welfare-system.herokuapp.com/',
       image: paws,
+      hosted: true,
     },
     {
       title: 'Tech Blog',
@@ -36,6 +37,7 @@ export default function Projects() {
       githubLink: 'https://github.com/seanscott95/Tech-Blog',
       deployedLink: 'https://pacific-ravine-00893.herokuapp.com/',
       image: techBlog,
+      hosted: true,
     },
     {
       title: 'Text Editor',
@@ -44,6 +46,7 @@ export default function Projects() {
       githubLink: 'https://github.com/seanscott95/Text-Editor',
       deployedLink: 'https://boiling-wave-43662.herokuapp.com/',
       image: jate,
+      hosted: true,
     },
     {
       title: 'Social Network API (NoSQL)',
@@ -52,6 +55,7 @@ export default function Projects() {
       githubLink: 'https://github.com/seanscott95/NoSQL-Social-Network-API',
       deployedLink: 'https://drive.google.com/file/d/1tPBQuYIUq_NJp3XgXrDzNpEoy45Q-6la/view',
       image: socialNetworkApi,
+      hosted: false,
     },
     {
       title: 'Team Profile Generator',
@@ -60,6 +64,7 @@ export default function Projects() {
       githubLink: 'https://github.com/seanscott95/Team-Profile-Generator',
       deployedLink: 'https://drive.google.com/file/d/1yNBxCo7Cfa1ZD1T4x9U5-uVDR7NTmkKL/view',
       image: teamProfileGenerator,
+      hosted: false,
     },
     {
       title: 'Weather Dashboard',
@@ -68,6 +73,7 @@ export default function Projects() {
       githubLink: 'https://github.com/seanscott95/Weather-Dashboard',
       deployedLink: 'https://seanscott95.github.io/Weather-Dashboard/',
       image: weatherDashboard,
+      hosted: false,
     },
   ];
 
@@ -83,7 +89,8 @@ export default function Projects() {
                   <h2>{projects.title}</h2>
                   <p><span className='titleBold'>Collaborators: </span>{projects.collaborators}</p>
                   <p>{projects.description}</p>
-                  <p className='note'>Note: App hosted on a free heroku server. Please allow 15-30 seconds to load the page.</p>
+                  
+                  <p className={projects.hosted ? 'note' : 'noteHide'}>Note: App hosted on a free heroku server. Please allow 15-30 seconds to load the page.</p>
                   <a className="projectLinks" href={projects.githubLink}
                     target='_blank' rel='noreferrer'>GitHub Link</a>
                   <a className="projectLinks" href={projects.deployedLink}

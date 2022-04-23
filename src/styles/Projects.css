@@ -41,6 +41,10 @@
     font-size: 15px;
 }
 
+.noteHide {
+    display: none;
+}
+
 .projectLinks {
     background: rgb(30, 35, 39);
     padding: 5px;
