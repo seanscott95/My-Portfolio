@@ -1,9 +1,10 @@
 import React from 'react';
+import rocks from '../../assets/images/rocks.png';
 import '../../styles/Home.css';
 
 export default function Home() {
     const style = {
-        backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/rocks.png"})`,
+        backgroundImage:`url(${process.env.PUBLIC_URL + rocks})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',

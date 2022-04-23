@@ -1,11 +1,12 @@
 import React from 'react';
-import '../../styles/Resume.css';
+import resumeBackground from '../../assets/images/hills.png';
 import resume from '../../assets/resume/Sean Scott Resume.pdf'
+import '../../styles/Resume.css';
 
 export default function Resume() {
 
     const style = {
-        backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/hills.png"})`,
+        backgroundImage:`url(${process.env.PUBLIC_URL + resumeBackground})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',

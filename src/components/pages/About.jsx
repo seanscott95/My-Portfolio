@@ -1,11 +1,12 @@
 import React from 'react';
-import '../../styles/About.css';
+import rockBackground from '../../assets/images/rock.png';
 import avatar from '../../assets/images/avatar.png';
+import '../../styles/About.css';
 
 export default function About() {
 
     const style = {
-        backgroundImage:`url(${process.env.PUBLIC_URL+ "/images/rock.png"})`,
+        backgroundImage:`url(${process.env.PUBLIC_URL + rockBackground})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
@@ -17,7 +18,6 @@ export default function About() {
 
     return (
         <div style={style}>
-            {/* <image className="avatar" src={avatar} alt="My Avatar"></image> */}
             <div className='containerInfo'>
                 <img src={avatar} alt='avatar' className="avatar" />
                 <div className='containerBackground'>

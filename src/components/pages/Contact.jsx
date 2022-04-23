@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import contactBackground from '../../assets/images/header-img.png';
 import '../../styles/Contact.css';
 
 export default function Contact() {
 
   const style = {
-    backgroundImage: `url(${process.env.PUBLIC_URL + "/images/header-img.png"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + contactBackground})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
