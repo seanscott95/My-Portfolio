@@ -6,15 +6,15 @@ import paws from '../../assets/images/paws.png';
 import socialNetworkApi from '../../assets/images/social-network-api.png';
 import teamProfileGenerator from '../../assets/images/team-profile-generator.png';
 import weatherDashboard from '../../assets/images/weather-dashboard.png';
+import backgroundImage from '../../assets/images/blue.png';
 
 export default function Projects() {
 
   const style = {
-    // backgroundImage: `url(${process.env.PUBLIC_URL + "/images/sky.png"})`,
-    // backgroundRepeat: 'no-repeat',
-    // backgroundPosition: 'center',
-    // backgroundSize: 'cover',
-    // height: '77.6vh',
+    backgroundImage: `url(${process.env.PUBLIC_URL + backgroundImage})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
