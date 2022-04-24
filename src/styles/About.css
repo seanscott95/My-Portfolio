@@ -2,7 +2,7 @@
 .avatar {
     height: 350px;
     width: 350px;
-    margin: 200px;
+    margin: 50px;
     border-radius: 10px;
 }
 
@@ -24,8 +24,6 @@
 .aboutInfo {
     color: #1e2327;
     font-size: 25px;
-    height: 300px;
-    width: 600px;
     padding: 20px;
     background: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
@@ -33,4 +31,49 @@
 
 .containerInfo {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1025px) {
+    .containerInfo {
+        flex-direction: column;
+    }
+
+    .containerBackground {
+        margin: 50px;
+        font-size: 20px;
+    }
+
+    .avatar {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        height: 250px;
+        width: 250px;
+    }
+
+    .aboutInfo {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .avatar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .avatar {
+        display: none;
+    }
+
+    .aboutInfo {
+        font-size: 15px;
+    }
+
+    .containerBackground {
+        margin: 50px;
+        font-size: 15px;
+    }
 }

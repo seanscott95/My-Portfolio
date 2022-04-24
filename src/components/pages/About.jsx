@@ -10,7 +10,7 @@ export default function About() {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        height: '78.4vh',
+        // height: '78.4vh',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
