@@ -42,3 +42,146 @@
     border-left: 3px solid var(--border-color);
     height: 90px;
 }
+
+@media screen and (max-width: 1400px) {
+    .outerContainer {
+        font-size: smaller;
+    }
+
+    .header {
+        height: 200px;
+        width: 400px;
+    }
+
+    .initials {
+        margin-top: 40px;
+        line-height: 1.8em;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .outerContainer {
+        font-size: smaller;
+        padding: 50px 100px
+    }
+
+    .header {
+        height: 200px;
+        width: 400px;
+    }
+
+    .initials {
+        margin-top: 40px;
+        line-height: 1.8em;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .outerContainer {
+        font-size: 70%;
+        padding: 50px 50px
+    }
+
+    .header {
+        height: 150px;
+        width: 300px;
+        padding: 5px;
+    }
+    
+    .initials {
+        margin-top: 60px;
+        margin-left: 10px;
+        line-height: 1.8em;
+        height: 70px;
+        width: 70px;
+    }
+
+    .single-line {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .outerContainer {
+        font-size: 70%;
+        padding: 5px 50px
+    }
+
+    .header {
+        height: 150px;
+        width: 300px;
+        padding: 5px;
+    }
+    
+    .initials {
+        margin-top: 60px;
+        margin-left: 10px;
+        line-height: 1.8em;
+        height: 70px;
+        width: 70px;
+    }
+
+    .single-line {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .outerContainer {
+        font-size: 60%;
+    }
+
+    .header {
+        height: 150px;
+        width: 250px;
+        padding: 5px;
+    }
+    
+    .initials {
+        margin-top: 60px;
+        margin-left: 10px;
+        line-height: 1.8em;
+        height: 70px;
+        width: 70px;
+    }
+
+    .single-line {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .outerContainer {
+        font-size: 60%;
+    }
+
+    .header {
+        height: 150px;
+        width: 250px;
+        padding: 5px;
+        margin-top: 100px;
+
+    }
+    
+    .initials, .initialsContainer, .single-line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .outerContainer {
+        font-size: 60%;
+    }
+
+    .header {
+        height: 150px;
+        width: 250px;
+        padding: 5px;
+        margin-top: 100px;
+
+    }
+    
+    .initials, .initialsContainer, .single-line {
+        display: none;
+    }
+}
