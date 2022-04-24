@@ -2,7 +2,7 @@
     --border-color: rgb(255, 255, 255, 0.5);
 }
 
-.outerContainer {
+.outerContainerHome {
     width: fit-content;
     height: auto;
     display: flex;
@@ -44,21 +44,21 @@
 }
 
 @media screen and (min-width: 2900px) {
-    .outerContainer {
+    .outerContainerHome {
         margin-left: 500px;
     }
 
 }
 
 @media screen and (min-width: 2000px) {
-    .outerContainer {
+    .outerContainerHome {
         margin-left: 300px;
     }
 
 }
 
 @media screen and (max-width: 1400px) {
-    .outerContainer {
+    .outerContainerHome {
         font-size: smaller;
     }
 
@@ -74,7 +74,7 @@
 }
 
 @media screen and (max-width: 1170px) {
-    .outerContainer {
+    .outerContainerHome {
         font-size: smaller;
         padding: 50px 100px
     }
@@ -91,7 +91,7 @@
 }
 
 @media screen and (max-width: 990px) {
-    .outerContainer {
+    .outerContainerHome {
         font-size: 70%;
         padding: 50px 50px
     }
@@ -116,7 +116,7 @@
 }
 
 @media screen and (max-width: 670px) {
-    .outerContainer {
+    .outerContainerHome {
         font-size: 70%;
         padding: 5px 50px
     }
@@ -141,7 +141,7 @@
 }
 
 @media screen and (max-width: 570px) {
-    .outerContainer {
+    .outerContainerHome {
         font-size: 60%;
     }
 
@@ -165,7 +165,7 @@
 }
 
 @media screen and (max-width: 470px) {
-    .outerContainer {
+    .outerContainerHome {
         font-size: 60%;
         width: 100px;
     }
@@ -185,7 +185,7 @@
 }
 
 @media screen and (max-width: 350px) {
-    .outerContainer {
+    .outerContainerHome {
         font-size: 60%;
     }
 

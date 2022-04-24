@@ -6,20 +6,21 @@ import '../../styles/Resume.css';
 export default function Resume() {
 
     const style = {
-        backgroundImage:`url(${process.env.PUBLIC_URL + resumeBackground})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL + resumeBackground})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        height: '78.4vh',
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'flex-start',
-        justifyContent: 'center',
-        
-    };
+        // height: '78.4vh',
+        // display: 'flex',
+        // flexDirection: 'column',
+        // textAlign: 'center',
+        // justyifyContent: 'center',
 
-    return (
-        <div style={style}>
+};
+
+return (
+    <div style={style}>
+        <div className='outerContainerResume'>
             <div className='resumeContainer'>
                 <p className='resumeInner bold'>To save you some time here is a list of my proficiencies:</p>
                 <span className="resumeText">Click here for my resume: </span>
@@ -27,7 +28,7 @@ export default function Resume() {
             </div>
             <div className='resumeContainer'>
                 <p className='resumeInner'>
-                    <span className='bold'>Languages: </span> 
+                    <span className='bold'>Languages: </span>
                     JavaScript (AJAX, JSON), HTML, CSS, SQL.
                 </p>
                 <p className='resumeInner'>
@@ -36,10 +37,11 @@ export default function Resume() {
                 </p>
                 <p className='resumeInner'>
                     <span className='bold'>Frameworks and Libraries: </span>
-                    React (Hooks), jQuery, Bootstrap, Node.js (Express.js, 
+                    React (Hooks), jQuery, Bootstrap, Node.js (Express.js,
                     Inquirer.js, File System, Sequelize), Handlebars.js, GraphQL/Apollo.
                 </p>
             </div>
         </div>
-    );
+    </div>
+);
 }

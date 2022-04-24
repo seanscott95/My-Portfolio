@@ -16,7 +16,7 @@ export default function Home() {
     }
     return (
         <div style={style}>
-            <div className="outerContainer">
+            <div className="outerContainerHome">
                 <div className='initialsContainer'>
                     <h1 className="initials">SS</h1>
                 </div>
