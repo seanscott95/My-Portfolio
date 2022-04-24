@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 30px;
     line-height: 2;
 }
@@ -40,9 +41,48 @@ input, textarea {
     background: #1e2327;
     color: white;
     font-weight: bold;
-    margin: 10px 250px;
     padding: 5px;
     font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .contactForm {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contactForm {
+        width: 400px;
+        font-size: 20px;
+
+    }
+
+    .contactContainer {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .contactForm {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .contactContainer {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .contactForm {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .contactContainer {
+        font-size: 15px;
+    }
 }
