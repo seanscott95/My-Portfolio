@@ -15,9 +15,9 @@ export default function Projects() {
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    // display: 'flex',
+    // flexDirection: 'column',
+    // alignItems: 'center',
   };
 
   const projects = [
