@@ -30,7 +30,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div className='portfolioContainer' style={{height: "100%"}}>
       {/* Passes the currentPage from state and the function to update it */}
       <NavLayout currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Calls the renderPage method which returns a component */}

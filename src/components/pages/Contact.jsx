@@ -16,7 +16,7 @@ export default function Contact() {
     alignItems: 'center',
     fontWeight: 'bold',
     color: '#1e2327',
-
+    minHeight: 'calc(100% - 292px)',
   }
 
   const [name, setName] = useState('');

@@ -2,7 +2,7 @@ import PortfolioContainer from './components/containers/PortfolioContainer';
 
 function App() {
   return (
-    <div>
+    <div className="app" style={{height: "100%"}}>
       <PortfolioContainer />
     </div>
   );

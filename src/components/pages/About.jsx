@@ -6,13 +6,15 @@ import '../../styles/About.css';
 export default function About() {
 
     const style = {
-        backgroundImage:`url(${rockBackground})`,
+        backgroundImage: `url(${rockBackground})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         display: 'flex',
         flexDirection: 'column',
+        justifyContent: 'center',
         alignItems: 'center',
+        minHeight: 'calc(100% - 292px)',
     };
 
     return (

@@ -2,7 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin , faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
 import '../../styles/FooterLayout.css'
 
 export default function FooterLayout() {
@@ -31,9 +30,9 @@ export default function FooterLayout() {
             <ul className='footerList'>
                 {footerLinks.map((item) => (
                     <li className='footerItem'>
-                        <Link to={item.link}>
+                        <a href={item.link} target='_blank' rel='noreferrer'>
                             <FontAwesomeIcon icon={item.icon} size='2x' />
-                        </Link>
+                        </a>
                     </li>
                 ))}
             </ul>

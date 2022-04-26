@@ -12,6 +12,7 @@ export default function Home() {
         justifyContent: 'center',
         alignItems: 'center',
         fontWeight: 'bold',
+        minHeight: 'calc(100% - 292px)',
     }
     return (
         <div style={style}>
