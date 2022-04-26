@@ -10,19 +10,19 @@ export default function FooterLayout() {
     const footerLinks = [
         {
             icon: faGithub,
-            link: `${ process.env.PUBLIC_URL + "https://github.com/seanscott95"}`
+            link: "https://github.com/seanscott95"
         },
         {
             icon: faLinkedin,
-            link: `${ process.env.PUBLIC_URL + "https://www.linkedin.com/in/sean-scott-18ba07225/"}`
+            link: "https://www.linkedin.com/in/sean-scott-18ba07225/"
         },
         {
             icon: faStackOverflow,
-            link: `${ process.env.PUBLIC_URL + "https://stackoverflow.com/users/17353361/sean-scott"}`
+            link: "https://stackoverflow.com/users/17353361/sean-scott"
         },
         {
             icon: faEnvelope,
-            link: `${ process.env.PUBLIC_URL + "mailto:seanms418@gmail.com"}`
+            link: "mailto:seanms418@gmail.com"
         },
     ];
 
