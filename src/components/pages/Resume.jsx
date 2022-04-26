@@ -10,12 +10,6 @@ export default function Resume() {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        height: '78.4vh',
-        display: 'flex',
-        flexDirection: 'column',
-        textAlign: 'center',
-        justyifyContent: 'center',
-
 };
 
 return (
