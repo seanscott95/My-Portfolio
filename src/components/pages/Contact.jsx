@@ -6,7 +6,7 @@ import '../../styles/Contact.css';
 export default function Contact() {
 
   const style = {
-    backgroundImage: `url(${process.env.PUBLIC_URL + contactBackground})`,
+    backgroundImage: `url(${contactBackground})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover',

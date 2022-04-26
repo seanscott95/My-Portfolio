@@ -11,7 +11,7 @@ import backgroundImage from '../../assets/images/blue.png';
 export default function Projects() {
 
   const style = {
-    backgroundImage: `url(${process.env.PUBLIC_URL + backgroundImage})`,
+    backgroundImage: `url(${backgroundImage})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover',

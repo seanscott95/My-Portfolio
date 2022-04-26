@@ -6,7 +6,7 @@ import '../../styles/About.css';
 export default function About() {
 
     const style = {
-        backgroundImage:`url(${process.env.PUBLIC_URL + rockBackground})`,
+        backgroundImage:`url(${rockBackground})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',

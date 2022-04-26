@@ -6,15 +6,15 @@ import '../../styles/Resume.css';
 export default function Resume() {
 
     const style = {
-        backgroundImage: `url(${process.env.PUBLIC_URL + resumeBackground})`,
+        backgroundImage: `url(${resumeBackground})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        // height: '78.4vh',
-        // display: 'flex',
-        // flexDirection: 'column',
-        // textAlign: 'center',
-        // justyifyContent: 'center',
+        height: '78.4vh',
+        display: 'flex',
+        flexDirection: 'column',
+        textAlign: 'center',
+        justyifyContent: 'center',
 
 };
 

@@ -4,7 +4,7 @@ import '../../styles/Home.css';
 
 export default function Home() {
     const style = {
-        backgroundImage:`url(${process.env.PUBLIC_URL + rocks})`,
+        backgroundImage:`url(${rocks})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
