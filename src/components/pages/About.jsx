@@ -24,12 +24,13 @@ export default function About() {
                 <div className='containerBackground'>
                     <h1 className='about-title'>About</h1>
                     <p className='aboutInfo'>
-                        I am an aspiring Full Stack Web Developer. My background in Web Development is in the infant
-                        stages but I have learnt many relatable and transferable skills through various fields of my
-                        career. I learnt Full Stack Web Development through a Monash University Bootcamp and am slowly
-                        but surely making my way through this new and crazy world. I am looking to make this my career
-                        and am very excited and intrigued to see what comes next.
+                    Full Stack Web Developer leveraging background in Military and Nursing. Effective at 
+                    collaboration and communication within many environments. Completed a certificate in 
+                    Full Stack Web Development from Monash University. Passionate about continuous 
+                    development and improving skills to further advance projects. Looking forward to and are 
+                    very excited and intrigued to see what comes next in this line of work.
                     </p>
+                    <p>Technical Skills include HTML5, CSS3, Javascript, ReactJS, GraphQL, Node.js, MySQL, MongoDB, Express, JQuery, Bootstrap and Handelbars.js.</p>
                 </div>
             </div>
         </div>
