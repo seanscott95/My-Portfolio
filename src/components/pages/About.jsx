@@ -30,7 +30,7 @@ export default function About() {
                     development and improving skills to further advance projects. Looking forward to and are 
                     very excited and intrigued to see what comes next in this line of work.
                     </p>
-                    <p>Technical Skills include HTML5, CSS3, Javascript, ReactJS, GraphQL, Node.js, MySQL, MongoDB, Express, JQuery, Bootstrap and Handelbars.js.</p>
+                    <p className='aboutInfo'>Technical Skills include HTML5, CSS3, Javascript, ReactJS, GraphQL, Node.js, MySQL, MongoDB, Express, JQuery, Bootstrap and Handelbars.js.</p>
                 </div>
             </div>
         </div>
