@@ -26,7 +26,7 @@ This portfolio was created to display my work and web applications. Heres hoping
 - ![About Page](./src/assets/images/screenshot-about.PNG)
 
 <p>Projects Page</p>
-
+ 
 - ![Projects Page](./src/assets/images/screenshot-projects.PNG)
 
 <p>Contact</p>
