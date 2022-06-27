@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import React, { useState, useRef } from 'react';
 import contactBackground from '../../assets/images/header-img.png';
 import '../../styles/Contact.css';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
 
@@ -26,6 +26,8 @@ export default function Contact() {
   const [mouseOutErrorMessage, setMouseOutErrorMessage] = useState('');
   const [status, setStatus] = useState("Submit");
 
+  const form = useRef();
+
   const handleMouseOut = (e) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
@@ -41,38 +43,26 @@ export default function Contact() {
     }
   };
 
-  const handleFormSubmit = async (e) => {
+  const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
     setStatus("Sending...");
 
-    if (!validateEmail(email)) {
-      setEmailErrorMessage('Email is invalid.');
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-    }
-
-    let details = {
-      name: name,
-      email: email,
-      message: message,
-    };
-
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json; charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
+    emailjs.sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE,
+      process.env.REACT_APP_EMAILJS_TEMPLATE,
+      form.current,
+      process.env.REACT_APP_EMAILJS_PUBLIC
+    )
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
 
     setStatus("Submit");
 
-    let result = await response.json();
-    alert(result.status);
-
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');
     setEmail('');
     setMessage('');
@@ -85,23 +75,22 @@ export default function Contact() {
       <div className='contactContainer'>
         <h1 className="white" >Contact Page</h1>
 
-        <form className='contactForm'>
+        <form ref={form} onSubmit={handleFormSubmit} className='contactForm'>
           <label htmlFor='name'>Name</label>
-          <input type='text' id='name' name='name' placeholder='Your name...' value={name}
-            onMouseOut={handleMouseOut} onKeyPress= {handleMouseOut} 
-            onChange={(e) => setName(e.target.value)} />
+          <input type='text' id='name' name='user_name' value={name} placeholder='Your name...'
+            onMouseOut={handleMouseOut} onKeyPress={handleMouseOut} onChange={(e) => setName(e.target.value)} />
 
           <label htmlFor='email'>Email</label>
-          <input type='email' id='email' name='email' placeholder='Your email...'
-            value={email} onMouseOut={handleMouseOut} onKeyPress= {handleMouseOut}
-            onChange={(e) => setEmail(e.target.value)} />
+          <input type='email' id='email' name='user_email' value={email} placeholder='Your email...'
+            onMouseOut={handleMouseOut} onKeyPress={handleMouseOut} onChange={(e) => setEmail(e.target.value)}
+          />
 
           <label htmlFor='message'>Message</label>
-          <textarea type='text' id='message' name='message' rows='5'
-            placeholder='Your message...' value={message} onMouseOut={handleMouseOut}
-            onKeyPress= {handleMouseOut} onChange={(e) => setMessage(e.target.value)} ></textarea>
+          <textarea type='text' id='message' name='message' value={message} rows='5'
+            placeholder='Your message...' onMouseOut={handleMouseOut} onChange={(e) => setMessage(e.target.value)}
+            onKeyPress={handleMouseOut} ></textarea>
 
-          <button type="submit" className="sendButton" onClick={handleFormSubmit}>{status}</button>
+          <button type="submit" className="sendButton">{status}</button>
         </form>
         {setEmailErrorMessage && (
           <div>
