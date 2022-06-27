@@ -47,8 +47,6 @@ export default function Contact() {
 
     setStatus("Sending...");
 
-    const { name, email, message } = e.target.elements;
-
     if (!validateEmail(email)) {
       setEmailErrorMessage('Email is invalid.');
       // We want to exit out of this code block if something is wrong so that the user can correct it
@@ -56,15 +54,15 @@ export default function Contact() {
     }
 
     let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
+      name: name,
+      email: email,
+      message: message,
     };
 
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json;charset=utf-8",
+        "Content-Type": "application/json; charset=utf-8",
       },
       body: JSON.stringify(details),
     });
@@ -88,17 +86,17 @@ export default function Contact() {
         <h1 className="white" >Contact Page</h1>
 
         <form className='contactForm'>
-          <label for='name'>Name</label>
+          <label htmlFor='name'>Name</label>
           <input type='text' id='name' name='name' placeholder='Your name...' value={name}
             onMouseOut={handleMouseOut} onKeyPress= {handleMouseOut} 
             onChange={(e) => setName(e.target.value)} />
 
-          <label for='email'>Email</label>
+          <label htmlFor='email'>Email</label>
           <input type='email' id='email' name='email' placeholder='Your email...'
             value={email} onMouseOut={handleMouseOut} onKeyPress= {handleMouseOut}
             onChange={(e) => setEmail(e.target.value)} />
 
-          <label for='message'>Message</label>
+          <label htmlFor='message'>Message</label>
           <textarea type='text' id='message' name='message' rows='5'
             placeholder='Your message...' value={message} onMouseOut={handleMouseOut}
             onKeyPress= {handleMouseOut} onChange={(e) => setMessage(e.target.value)} ></textarea>
