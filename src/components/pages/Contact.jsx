@@ -24,6 +24,7 @@ export default function Contact() {
   const [message, setMessage] = useState('');
   const [emailErrorMessage, setEmailErrorMessage] = useState('');
   const [mouseOutErrorMessage, setMouseOutErrorMessage] = useState('');
+  const [status, setStatus] = useState("Submit");
 
   const handleMouseOut = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -40,17 +41,39 @@ export default function Contact() {
     }
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    setStatus("Sending...");
+
+    const { name, email, message } = e.target.elements;
+
     if (!validateEmail(email)) {
       setEmailErrorMessage('Email is invalid.');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
+
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+
+    setStatus("Submit");
+
+    let result = await response.json();
+    alert(result.status);
+
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');
     setEmail('');
@@ -80,7 +103,7 @@ export default function Contact() {
             placeholder='Your message...' value={message} onMouseOut={handleMouseOut}
             onKeyPress= {handleMouseOut} onChange={(e) => setMessage(e.target.value)} ></textarea>
 
-          <input type="submit" value="Send" className="sendButton" onClick={handleFormSubmit} />
+          <button type="submit" className="sendButton" onClick={handleFormSubmit}>{status}</button>
         </form>
         {setEmailErrorMessage && (
           <div>
