@@ -1,6 +1,6 @@
 import React from 'react';
 import rockBackground from '../../assets/images/rock.png';
-import avatar from '../../assets/images/avatar.png';
+import portrait from '../../assets/images/portrait.png';
 import '../../styles/About.css';
 
 export default function About() {
@@ -20,7 +20,7 @@ export default function About() {
     return (
         <div style={style}>
             <div className='containerInfo'>
-                <img src={avatar} alt='avatar' className="avatar" />
+                <img src={portrait} alt='avatar' className="avatar" />
                 <div className='containerBackground'>
                     <h1 className='about-title'>About</h1>
                     <p className='aboutInfo'>
@@ -30,7 +30,6 @@ export default function About() {
                     development and improving skills to further advance projects. Looking forward to and are 
                     very excited and intrigued to see what comes next in this line of work.
                     </p>
-                    <p className='aboutInfo'>Technical Skills include HTML5, CSS3, Javascript, ReactJS, GraphQL, Node.js, MySQL, MongoDB, Express, JQuery, Bootstrap and Handelbars.js.</p>
                 </div>
             </div>
         </div>

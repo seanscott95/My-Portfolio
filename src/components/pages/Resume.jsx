@@ -1,6 +1,6 @@
 import React from 'react';
 import resumeBackground from '../../assets/images/hills.png';
-import resume from '../../assets/resume/Sean Scott Resume.pdf'
+import resume from '../../assets/resume/Resume - Sean Scott.pdf'
 import '../../styles/Resume.css';
 
 export default function Resume() {
