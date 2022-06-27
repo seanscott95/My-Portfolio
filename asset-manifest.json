@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.d80562e9.css",
-    "main.js": "/My-Portfolio/static/js/main.94b9de60.js",
+    "main.js": "/My-Portfolio/static/js/main.3719e1df.js",
     "static/media/blue.png": "/My-Portfolio/static/media/blue.13d4235cf4d988953251.png",
     "static/media/paws.png": "/My-Portfolio/static/media/paws.1fce8844ab93f3132573.png",
+    "static/media/portrait.png": "/My-Portfolio/static/media/portrait.d11fc8ddaba6dc5d4777.png",
     "static/media/header-img.png": "/My-Portfolio/static/media/header-img.f03846d011de3f292bf3.png",
     "static/media/hills.png": "/My-Portfolio/static/media/hills.9fe09b4e7a3e75e93049.png",
     "static/media/rock.png": "/My-Portfolio/static/media/rock.b3843f191354e36521db.png",
     "static/media/rocks.png": "/My-Portfolio/static/media/rocks.9fa863c1881c47e819c4.png",
-    "static/media/Sean Scott Resume.pdf": "/My-Portfolio/static/media/Sean Scott Resume.0f2778ba386726162f00.pdf",
-    "static/media/avatar.png": "/My-Portfolio/static/media/avatar.2e64cd21c2dbc7d944b9.png",
+    "static/media/Resume - Sean Scott.pdf": "/My-Portfolio/static/media/Resume - Sean Scott.e855de97876cb6de9fca.pdf",
     "static/media/team-profile-generator.png": "/My-Portfolio/static/media/team-profile-generator.6a22237b981f2d983e4c.png",
     "static/media/weather-dashboard.png": "/My-Portfolio/static/media/weather-dashboard.d340448256720c976219.png",
     "static/media/tech-blog.png": "/My-Portfolio/static/media/tech-blog.d3e9b62a77c2dd654ed4.png",
@@ -17,10 +17,10 @@
     "static/media/social-network-api.png": "/My-Portfolio/static/media/social-network-api.766aa74ff4726bf6179d.png",
     "index.html": "/My-Portfolio/index.html",
     "main.d80562e9.css.map": "/My-Portfolio/static/css/main.d80562e9.css.map",
-    "main.94b9de60.js.map": "/My-Portfolio/static/js/main.94b9de60.js.map"
+    "main.3719e1df.js.map": "/My-Portfolio/static/js/main.3719e1df.js.map"
   },
   "entrypoints": [
     "static/css/main.d80562e9.css",
-    "static/js/main.94b9de60.js"
+    "static/js/main.3719e1df.js"
   ]
 }
