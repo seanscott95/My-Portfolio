@@ -7,6 +7,7 @@ import socialNetworkApi from '../../assets/images/social-network-api.png';
 import teamProfileGenerator from '../../assets/images/team-profile-generator.png';
 import weatherDashboard from '../../assets/images/weather-dashboard.png';
 import backgroundImage from '../../assets/images/blue.png';
+import toughTrackingImage from '../../assets/images/tt.png';
 
 export default function Projects() {
 
@@ -18,6 +19,16 @@ export default function Projects() {
   };
 
   const projects = [
+    {
+      title: 'Tough Tracking',
+      collaborators: 'Sean Scott',
+      description: 'Plan and visualise a workout ahead of time. Create a workout that has a list of your exercises saved under cardio or strength. Cardio inputs include exercise name, distance, time and intensity while strength covers exercise weight, sets and reps.',
+      githubLink: 'https://github.com/seanscott95/Tough-Tracking',
+      deployedLink: 'https://tough-tracking.herokuapp.com/',
+      technologies: 'React, GraphQL, MongoDB, JWT, Styled Components, JS.',
+      image: toughTrackingImage,
+      hosted: true,
+    },
     {
       title: 'Pet Advocate Welfare System (PAWS)',
       collaborators: 'Sean Scott, Ayako Woollan and Alan Cherian.',
