@@ -94,7 +94,6 @@ export default function Projects() {
   return (
     <div style={style}>
       <div className='containerProjectsPage'>
-        <h1 className='pageTitle'>Projects</h1>
         <div className='containerProjects'>
           {projects.map((projects) => (
             <div className='containerInfoImage'>
