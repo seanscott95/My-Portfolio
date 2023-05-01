@@ -22,7 +22,7 @@ export default function Projects() {
       title: 'Total Golf',
       collaborators: 'Sean Scott',
       description: 'Keep track of your golf scorecards where you can see your own statistics and compare with your friends to see who is best',
-      githubLink: 'https://github.com/seanscott95/Total Golf',
+      githubLink: 'https://github.com/seanscott95/Total-Golf',
       deployedLink: 'https://total-golf.herokuapp.com/',
       technologies: 'React, Express, MongoDB, JWT, RTK, JS.',
       image: totalGolfImage,
