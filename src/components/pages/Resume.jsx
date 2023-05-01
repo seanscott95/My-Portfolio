@@ -14,33 +14,31 @@ export default function Resume() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: 'calc(100% - 292px)',
+        height: 'calc(100vh - 200px)',
     };
 
     return (
         <div style={style}>
-            <div className='outerContainerResume'>
                 <div className='resumeContainer'>
                     <p className='resumeInner bold'>To save you some time here is a list of my proficiencies:</p>
+                    
                     <span className="resumeText">Click here for my resume: </span>
-                    <a className='resume' href={resume} target='_blank' rel='noreferrer' >Resume</a>
-                </div>
-                <div className='resumeContainer'>
+                    <a className='resume' href={resume} target='_blank' rel='noreferrer'>Resume</a>
+                    
                     <p className='resumeInner'>
                         <span className='bold'>Languages: </span>
                         JavaScript (AJAX, JSON), HTML, CSS, SQL.
                     </p>
                     <p className='resumeInner'>
                         <span className='bold'>Tools: </span>
-                        VSCode, Git, GitHub, Command Line, Heroku, MySQL, MongoDB, Jest.
+                        VSCode, Git, GitHub, Command Line, Heroku, MySQL, MongoDB, Jest, RTK.
                     </p>
                     <p className='resumeInner'>
                         <span className='bold'>Frameworks and Libraries: </span>
-                        React (Hooks), jQuery, Bootstrap, Node.js (Express.js,
-                        Inquirer.js, File System, Sequelize), Handlebars.js, GraphQL/Apollo.
+                        React (Hooks), jQuery, Bootstrap, Handlebars.js, GraphQL/Apollo, Node.js (Express,
+                        Inquirer, File System, Sequelize, Mongoose, Dotenv).
                     </p>
                 </div>
-            </div>
         </div>
     );
 }

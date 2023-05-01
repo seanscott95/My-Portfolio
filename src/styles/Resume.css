@@ -1,7 +1,6 @@
 .resumeContainer {
     color: rgb(30, 35, 39);
-    width: 500px;
-    height: auto;
+    width: 600px;
     font-size: 25px;
     padding: 20px;
     background: rgb(30, 35, 39, .9);
@@ -48,78 +47,37 @@
     font-weight: bold;
 }
 
-.outerContainerResume {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-@media screen and (max-width: 1025px) {
-    .outerContainerResume {
-        flex-direction: column;
-    }
-}
-
 @media screen and (max-width: 870px) {
-    .outerContainerResume {
-        flex-direction: column;
-    }
-
     .resumeContainer, .resumeInner {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .outerContainerResume {
-        flex-direction: column;
-    }
-
-    .resumeContainer, .resumeInner {
-        font-size: 20px;
-    }
-
+@media screen and (max-width: 730px) {
     .resumeContainer {
         width: 400px;
         margin: 25px;
     }
 }
 
-@media screen and (max-width: 470px) {
-    .outerContainerResume {
-        flex-direction: column;
+@media screen and (max-width: 500px) {
+    .resumeContainer, .resumeInner, p {
+        font-size: 15px;
     }
-
-    .resumeContainer, .resumeInner {
-        font-size: 20px;
-        
-    }
-
     .resumeContainer {
         width: 300px;
-        margin: 25px;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .resumeInner {
+        margin: 5px;
+        padding: 10px;
     }
 }
 
 @media screen and (max-width: 370px) {
-    .outerContainerResume {
-        flex-direction: column;
-    }
-
-    .resumeContainer, .resumeInner {
-        font-size: 20px;
-        
-    }
-
     .resumeContainer {
         width: 250px;
-        margin: 25px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }

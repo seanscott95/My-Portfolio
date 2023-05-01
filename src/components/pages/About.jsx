@@ -14,7 +14,7 @@ export default function About() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: 'calc(100% - 292px)',
+        height: 'calc(100vh - 200px)',
     };
 
     return (
