@@ -3,11 +3,10 @@ import '../../styles/Projects.css';
 import techBlog from '../../assets/images/tech-blog.png';
 import jate from '../../assets/images/jate.png';
 import paws from '../../assets/images/paws.png';
-import socialNetworkApi from '../../assets/images/social-network-api.png';
 import teamProfileGenerator from '../../assets/images/team-profile-generator.png';
-import weatherDashboard from '../../assets/images/weather-dashboard.png';
 import backgroundImage from '../../assets/images/blue.png';
 import toughTrackingImage from '../../assets/images/tt.png';
+import totalGolfImage from '../../assets/images/totalGolfImage.png';
 
 export default function Projects() {
 
@@ -19,6 +18,16 @@ export default function Projects() {
   };
 
   const projects = [
+    {
+      title: 'Total Golf',
+      collaborators: 'Sean Scott',
+      description: 'Keep track of your golf scorecards where you can see your own statistics and compare with your friends to see who is best',
+      githubLink: 'https://github.com/seanscott95/Total Golf',
+      deployedLink: 'https://total-golf.herokuapp.com/',
+      technologies: 'React, Express, MongoDB, JWT, RTK, JS.',
+      image: totalGolfImage,
+      hosted: true,
+    },
     {
       title: 'Tough Tracking',
       collaborators: 'Sean Scott',
@@ -60,16 +69,6 @@ export default function Projects() {
       hosted: true,
     },
     {
-      title: 'Social Network API (NoSQL)',
-      collaborators: 'Sean Scott.',
-      description: 'A social network API where users can share their thoughts, react to friends’ thoughts, and create a friend list.',
-      githubLink: 'https://github.com/seanscott95/NoSQL-Social-Network-API',
-      deployedLink: 'https://drive.google.com/file/d/1tPBQuYIUq_NJp3XgXrDzNpEoy45Q-6la/view',
-      technologies: 'HTML, JS, Node, Express, MongoDB, Mongoose.',
-      image: socialNetworkApi,
-      hosted: false,
-    },
-    {
       title: 'Team Profile Generator',
       collaborators: 'Sean Scott.',
       description: 'Enter information about employees on a software engineering to generate an HTML webpage which displays summaries for each person.',
@@ -77,16 +76,6 @@ export default function Projects() {
       deployedLink: 'https://drive.google.com/file/d/1yNBxCo7Cfa1ZD1T4x9U5-uVDR7NTmkKL/view',
       technologies: 'HTML, JS, Node, Inquirer, Bootstrap.',
       image: teamProfileGenerator,
-      hosted: false,
-    },
-    {
-      title: 'Weather Dashboard',
-      collaborators: 'Sean Scott.',
-      description: 'Search for a city via the form input you will be presented with the current and future temperature, humidity, wind speed, and UV index.',
-      githubLink: 'https://github.com/seanscott95/Weather-Dashboard',
-      deployedLink: 'https://seanscott95.github.io/Weather-Dashboard/',
-      technologies: 'HTML, CSS, JS',
-      image: weatherDashboard,
       hosted: false,
     },
   ];

@@ -64,6 +64,10 @@
     align-items: center;
 }
 
+.containerInfoImage:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
 .projectBackground {
     height: 350px;
     width: 550px;
@@ -112,7 +116,10 @@
     }
 
     .containerInfoImage {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .containerInfoImage:nth-of-type(even) {
+        flex-direction: column-reverse;
     }
 }
 
@@ -128,10 +135,6 @@
 
     .containerProjectsPage, .projectCard, .note {
         font-size: 15px;
-    }
-
-    .containerInfoImage {
-        flex-direction: column;
     }
 }
 
