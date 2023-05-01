@@ -28,8 +28,8 @@ export default function FooterLayout() {
     return (
         <div className="footer">
             <ul className='footerList'>
-                {footerLinks.map((item) => (
-                    <li className='footerItem'>
+                {footerLinks.map((item, index) => (
+                    <li className='footerItem' key={`${index} - ${new Date().getTime()}`}>
                         <a href={item.link} target='_blank' rel='noreferrer'>
                             <FontAwesomeIcon icon={item.icon} size='2x' />
                         </a>

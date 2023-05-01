@@ -85,7 +85,7 @@ export default function Projects() {
       <div className='containerProjectsPage'>
         <div className='containerProjects'>
           {projects.map((projects) => (
-            <div className='containerInfoImage'>
+            <div className='containerInfoImage' key={projects.title}>
               <div className='containerProjectInfo'>
                 <div className='projectCard'>
                   <h2>{projects.title}</h2>

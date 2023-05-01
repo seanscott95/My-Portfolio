@@ -29,8 +29,11 @@ export default function NavLayout({ currentPage, handlePageChange }) {
 
     return (
         <ul className='navbar'>
-            {navbarPages.map((page) => (
-                <li className={currentPage === page.title ? 'navbarLinkActive' : 'navbarLink'}>
+            {navbarPages.map((page, index) => (
+                <li
+                    className={currentPage === page.title ? 'navbarLinkActive' : 'navbarLink'}
+                    key={`${index} - ${new Date().getTime()}`}
+                >
                     <a href={page.link} onClick={() => handlePageChange(page.title)}>
                         {page.title}
                     </a>
