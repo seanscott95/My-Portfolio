@@ -22,26 +22,9 @@ export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [emailErrorMessage, setEmailErrorMessage] = useState('');
-  const [mouseOutErrorMessage, setMouseOutErrorMessage] = useState('');
-  const [status, setStatus] = useState("Submit");
+  const [status, setStatus] = useState("Send");
 
   const form = useRef();
-
-  const handleMouseOut = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputValue = target.value;
-
-    // Based on the input type, we set the state of either email, username, and password
-    if (!inputValue) {
-      setMouseOutErrorMessage('This field is required.');
-      return;
-    } else {
-      setMouseOutErrorMessage('');
-      return
-    }
-  };
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -61,13 +44,11 @@ export default function Contact() {
         console.log(error.text);
       });
 
-    setStatus("Submit");
+    setStatus("Sent");
 
     setName('');
     setEmail('');
     setMessage('');
-    setEmailErrorMessage('');
-    setMouseOutErrorMessage('');
   };
 
   return (
@@ -78,30 +59,19 @@ export default function Contact() {
         <form ref={form} onSubmit={handleFormSubmit} className='contactForm'>
           <label htmlFor='name'>Name</label>
           <input type='text' id='name' name='user_name' value={name} placeholder='Your name...'
-            onMouseOut={handleMouseOut} onKeyPress={handleMouseOut} onChange={(e) => setName(e.target.value)} />
+            onChange={(e) => setName(e.target.value)} required/>
 
           <label htmlFor='email'>Email</label>
           <input type='email' id='email' name='user_email' value={email} placeholder='Your email...'
-            onMouseOut={handleMouseOut} onKeyPress={handleMouseOut} onChange={(e) => setEmail(e.target.value)}
-          />
+            onChange={(e) => setEmail(e.target.value)} required />
 
           <label htmlFor='message'>Message</label>
           <textarea type='text' id='message' name='message' value={message} rows='5'
-            placeholder='Your message...' onMouseOut={handleMouseOut} onChange={(e) => setMessage(e.target.value)}
-            onKeyPress={handleMouseOut} ></textarea>
-
+            placeholder='Your message...' onChange={(e) => setMessage(e.target.value)} required
+          ></textarea>
+          
           <button type="submit" className="sendButton">{status}</button>
         </form>
-        {setEmailErrorMessage && (
-          <div>
-            <p className="white">{emailErrorMessage}</p>
-          </div>
-        )}
-        {setMouseOutErrorMessage && (
-          <div>
-            <p className="white">{mouseOutErrorMessage}</p>
-          </div>
-        )}
       </div>
     </div>
   );
