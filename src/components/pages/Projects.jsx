@@ -79,18 +79,15 @@ export default function Projects() {
           <div className='projectCard'>
             <section>
               <h2>{projects.title}</h2>
-              <p><span className='titleBold'>Collaborators: </span>{projects.collaborators}</p>
+              <p><span>Collaborators: </span>{projects.collaborators}</p>
               <p>{projects.description}</p>
               <p>Technologies: {projects.technologies}</p>
-
-              <p className={projects.hosted ? 'note' : 'noteHide'}>Note: App hosted on a free heroku server. Please allow 15-30 seconds to load the page.</p>
-              <a className="projectLinks" href={projects.githubLink}
-                target='_blank' rel='noreferrer'>GitHub Link</a>
-              <a className="projectLinks" href={projects.deployedLink}
-                target='_blank' rel='noreferrer'>Deployed Link</a>
+              <p className={projects.hosted ? 'note' : 'noteHide'}>Note: Please allow 10-15 seconds to load the page.</p>
+              <a href={projects.githubLink} target='_blank' rel='noreferrer'>GitHub Link</a>
+              <a href={projects.deployedLink} target='_blank' rel='noreferrer'>Deployed Link</a>
             </section>
             <section>
-              <img src={projects.image} alt='project' className='projectImage' />
+              <img src={projects.image} alt='project' />
             </section>
           </div>
         </div>
