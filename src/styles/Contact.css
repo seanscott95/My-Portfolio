@@ -89,3 +89,9 @@ textarea {
         width: 200px;
     }
 }
+
+@media screen and (max-height: 800px) {
+    .contactContainer {
+        height: auto;
+    }
+}

@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 510px) {
     .aboutContainer img {
-        height: 30%;
+        height: 200px;
         width: auto;
     }
     .infoContainer, .infoContainer p {
@@ -70,5 +70,11 @@
     }
     .infoContainer {
         padding: 10px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .aboutContainer {
+        height: auto;
     }
 }
