@@ -2,7 +2,7 @@
     --border-color: rgb(255, 255, 255, 0.5);
 }
 
-.outerContainerHome {
+.outerContainer{
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -37,13 +37,13 @@
     color: rgb(30, 35, 39, .9);
 }
 
-.single-line {
+.singleLine {
     border-left: 3px solid var(--border-color);
     height: 90px;
 }
 
 @media screen and (max-width: 1400px) {
-    .outerContainerHome {
+    .outerContainer{
         font-size: smaller;
     }
     .header {
@@ -57,13 +57,13 @@
 }
 
 @media screen and (max-width: 1170px) {
-    .outerContainerHome {
+    .outerContainer{
         padding: 50px 100px
     }
 }
 
 @media screen and (max-width: 990px) {
-    .outerContainerHome {
+    .outerContainer{
         font-size: 70%;
         padding: 50px 50px
     }
@@ -78,20 +78,19 @@
         height: 70px;
         width: 70px;
     }
-    .single-line {
+    .singleLine {
         height: 40px;
     }
 }
 
 @media screen and (max-width: 670px) {
-    .outerContainerHome {
-        font-size: 70%;
+    .outerContainer{
         padding: 5px 50px
     }
 }
 
 @media screen and (max-width: 570px) {
-    .outerContainerHome {
+    .outerContainer{
         font-size: 60%;
     }
     .header {
@@ -100,7 +99,7 @@
 }
 
 @media screen and (max-width: 470px) {
-    .outerContainerHome {
+    .outerContainer{
         margin: 0 auto;
         padding: 0;
     }

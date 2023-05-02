@@ -13,15 +13,15 @@ export default function Home() {
         alignItems: 'center',
         fontWeight: 'bold',
         height: 'calc(100vh - 10.93rem)',
-    }
-    
+    };
+
     return (
         <div style={style}>
-            <div className="outerContainerHome">
+            <div className="outerContainer">
                 <div className='initialsContainer'>
                     <h1 className="initials">SS</h1>
                 </div>
-                <div className="single-line"></div>
+                <div className="singleLine"></div>
                 <div className="header">
                     <h1>SEAN SCOTT</h1>
                     <p>FULL-STACK WEB DEVELOPER</p>
@@ -29,4 +29,4 @@ export default function Home() {
             </div>
         </div>
     );
-}
+};
