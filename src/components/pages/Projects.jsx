@@ -4,18 +4,10 @@ import techBlog from '../../assets/images/tech-blog.png';
 import jate from '../../assets/images/jate.png';
 import paws from '../../assets/images/paws.png';
 import teamProfileGenerator from '../../assets/images/team-profile-generator.png';
-import backgroundImage from '../../assets/images/blue.png';
 import toughTrackingImage from '../../assets/images/tt.png';
 import totalGolfImage from '../../assets/images/totalGolfImage.png';
 
 export default function Projects() {
-
-  const style = {
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-  };
 
   const projects = [
     {
@@ -81,30 +73,28 @@ export default function Projects() {
   ];
 
   return (
-    <div style={style}>
-      <div className='containerProjectsPage'>
-        <div className='containerProjects'>
-          {projects.map((projects) => (
-            <div className='containerInfoImage' key={projects.title}>
-              <div className='containerProjectInfo'>
-                <div className='projectCard'>
-                  <h2>{projects.title}</h2>
-                  <p><span className='titleBold'>Collaborators: </span>{projects.collaborators}</p>
-                  <p>{projects.description}</p>
-                  <p>Technologies: {projects.technologies}</p>
-                  
-                  <p className={projects.hosted ? 'note' : 'noteHide'}>Note: App hosted on a free heroku server. Please allow 15-30 seconds to load the page.</p>
-                  <a className="projectLinks" href={projects.githubLink}
-                    target='_blank' rel='noreferrer'>GitHub Link</a>
-                  <a className="projectLinks" href={projects.deployedLink}
-                    target='_blank' rel='noreferrer'>Deployed Link</a>
-                </div>
-              </div>
-              <img src={projects.image} alt='project' className='projectBackground' />
-            </div>
-          ))}
+    <div className='containerProjectsPage'>
+      {projects.map((projects) => (
+        <div className='containerProjectInfo' key={projects.title}>
+          <div className='projectCard'>
+            <section>
+              <h2>{projects.title}</h2>
+              <p><span className='titleBold'>Collaborators: </span>{projects.collaborators}</p>
+              <p>{projects.description}</p>
+              <p>Technologies: {projects.technologies}</p>
+
+              <p className={projects.hosted ? 'note' : 'noteHide'}>Note: App hosted on a free heroku server. Please allow 15-30 seconds to load the page.</p>
+              <a className="projectLinks" href={projects.githubLink}
+                target='_blank' rel='noreferrer'>GitHub Link</a>
+              <a className="projectLinks" href={projects.deployedLink}
+                target='_blank' rel='noreferrer'>Deployed Link</a>
+            </section>
+            <section>
+              <img src={projects.image} alt='project' className='projectImage' />
+            </section>
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }
