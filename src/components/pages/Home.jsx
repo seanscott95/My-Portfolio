@@ -12,8 +12,9 @@ export default function Home() {
         justifyContent: 'center',
         alignItems: 'center',
         fontWeight: 'bold',
-        height: 'calc(100vh - 177px)',
+        height: 'calc(100vh - 10.93rem)',
     }
+    
     return (
         <div style={style}>
             <div className="outerContainerHome">

@@ -42,30 +42,14 @@
     height: 90px;
 }
 
-@media screen and (min-width: 2900px) {
-    .outerContainerHome {
-        margin-left: 500px;
-    }
-
-}
-
-@media screen and (min-width: 2000px) {
-    .outerContainerHome {
-        margin-left: 300px;
-    }
-
-}
-
 @media screen and (max-width: 1400px) {
     .outerContainerHome {
         font-size: smaller;
     }
-
     .header {
         height: 200px;
         width: 400px;
     }
-
     .initials {
         margin-top: 40px;
         line-height: 1.8em;
@@ -74,18 +58,7 @@
 
 @media screen and (max-width: 1170px) {
     .outerContainerHome {
-        font-size: smaller;
         padding: 50px 100px
-    }
-
-    .header {
-        height: 200px;
-        width: 400px;
-    }
-
-    .initials {
-        margin-top: 40px;
-        line-height: 1.8em;
     }
 }
 
@@ -94,21 +67,17 @@
         font-size: 70%;
         padding: 50px 50px
     }
-
     .header {
         height: 150px;
         width: 300px;
         padding: 5px;
     }
-    
     .initials {
         margin-top: 60px;
         margin-left: 10px;
-        line-height: 1.8em;
         height: 70px;
         width: 70px;
     }
-
     .single-line {
         height: 40px;
     }
@@ -119,84 +88,20 @@
         font-size: 70%;
         padding: 5px 50px
     }
-
-    .header {
-        height: 150px;
-        width: 300px;
-        padding: 5px;
-    }
-    
-    .initials {
-        margin-top: 60px;
-        margin-left: 10px;
-        line-height: 1.8em;
-        height: 70px;
-        width: 70px;
-    }
-
-    .single-line {
-        height: 40px;
-    }
 }
 
 @media screen and (max-width: 570px) {
     .outerContainerHome {
         font-size: 60%;
     }
-
     .header {
-        height: 150px;
         width: 250px;
-        padding: 5px;
-    }
-    
-    .initials {
-        margin-top: 60px;
-        margin-left: 10px;
-        line-height: 1.8em;
-        height: 70px;
-        width: 70px;
-    }
-
-    .single-line {
-        height: 40px;
     }
 }
 
 @media screen and (max-width: 470px) {
     .outerContainerHome {
-        font-size: 60%;
-        width: 100px;
-    }
-
-    .header {
-        height: 150px;
-        width: 250px;
-        padding: 5px;
-        margin-top: 100px;
-        margin-left: 100px;
-
-    }
-    
-    .initials, .initialsContainer, .single-line {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .outerContainerHome {
-        font-size: 60%;
-    }
-
-    .header {
-        height: 140px;
-        width: 230px;
-        padding: 5px;
-        margin-top: 100px;
-
-    }
-    
-    .initials, .initialsContainer, .single-line {
-        display: none;
+        margin: 0 auto;
+        padding: 0;
     }
 }
