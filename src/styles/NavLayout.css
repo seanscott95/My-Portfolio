@@ -1,6 +1,7 @@
 .navbar {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 25px;
     list-style: none;
@@ -8,20 +9,21 @@
     background: #1e2327;
     margin: 0px;
     padding: 10px;
+    height: 70px;
 }
 
 .navbarLinkActive {
     border: 3px solid rgba(54, 53, 53, 0.8);
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     font-size: 30px;
     text-transform: uppercase;
     transition: transform .2s;
 }
 
 .navbarLink {
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     transition: transform .3s;
 }
 
@@ -32,11 +34,11 @@ a {
 }
 
 .navbarLink:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 .navbarLinkActive:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 870px) {
@@ -48,7 +50,6 @@ a {
 
 @media screen and (max-width: 580px) {
     .navbarLink, .navbarLinkActive {
-        padding: 0px;
         margin: 10px;
         font-size: 18px;
     }
@@ -56,15 +57,12 @@ a {
 
 @media screen and (max-width: 435px) {
     .navbarLink, .navbarLinkActive {
-        padding: 0px;
-        margin: 10px;
         font-size: 15px;
     }
 }
 
 @media screen and (max-width: 360px) {
     .navbarLink, .navbarLinkActive {
-        padding: 0px;
         margin: 2px;
     }
 }
