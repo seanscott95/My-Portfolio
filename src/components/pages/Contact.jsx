@@ -37,9 +37,9 @@ export default function Contact() {
   };
 
   return (
-    <div className='bgContactPage'>
-      <div className='contactContainer'>
-        <h1 className="white" >Contact Page</h1>
+    <div className='contactContainer'>
+      <div className='formContainer'>
+        <h1>Contact Page</h1>
 
         <form ref={form} onSubmit={handleFormSubmit} className='contactForm'>
           <label htmlFor='name'>Name</label>
@@ -55,7 +55,7 @@ export default function Contact() {
             placeholder='Your message...' onChange={(e) => setMessage(e.target.value)} required
           ></textarea>
           
-          <button type="submit" className="sendButton">{status}</button>
+          <button type="submit">{status}</button>
         </form>
       </div>
     </div>
