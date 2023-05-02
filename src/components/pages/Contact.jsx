@@ -1,23 +1,8 @@
 import React, { useState, useRef } from 'react';
-import contactBackground from '../../assets/images/header-img.png';
 import '../../styles/Contact.css';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-
-  const style = {
-    backgroundImage: `url(${contactBackground})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontWeight: 'bold',
-    color: '#1e2327',
-    minHeight: 'calc(100vh - 280px)',
-  }
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -52,7 +37,7 @@ export default function Contact() {
   };
 
   return (
-    <div style={style}>
+    <div className='bgContactPage'>
       <div className='contactContainer'>
         <h1 className="white" >Contact Page</h1>
 
