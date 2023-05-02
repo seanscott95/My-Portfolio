@@ -1,79 +1,74 @@
-
-.avatar {
-    height: 350px;
-    width: 350px;
-    margin: 50px;
-    border-radius: 10px;
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+    background-image: radial-gradient(circle at 99% 33%, rgba(122,122,122, 0.06) 0%, rgba(122,122,122, 0.06) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, rgba(122,122,122, 0.06) 0%, rgba(122,122,122, 0.06) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, rgba(122,122,122, 0.06) 0%, rgba(122,122,122, 0.06) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, rgba(122,122,122, 0.06) 0%, rgba(122,122,122, 0.06) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, rgba(122,122,122, 0.06) 0%, rgba(122,122,122, 0.06) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgba(0,0,0, 0.93),rgba(0,0,0, 0.93));
 }
 
-.containerBackground {
+.infoContainer {
     color: rgb(30, 35, 39);
-    font-size: 25px;
+    font-size: 20px;
+    margin: 20px;
     padding: 20px;
     background: rgb(30, 35, 39, .9);
     border-radius: 10px;
-    margin: 150px 50px;
-    text-align: center;
+    width: 90%;
 }
 
-.about-title {
+
+.infoContainer h1 {
     color: white;
     font-weight: bold;
+    padding-left: 15px;
 }
 
-.aboutInfo {
+.infoContainer p {
     color: #1e2327;
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
+    margin: 10px;
     background: rgb(255, 255, 255, 0.8);
     border-radius: 10px;
 }
 
-.containerInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.aboutContainer img {
+    height: 350px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 1025px) {
-    .containerInfo {
-        flex-direction: column;
+    .infoContainer, .infoContainer p {
+        font-size: 18px;
     }
-
-    .containerBackground {
-        margin: 50px;
-        font-size: 20px;
-    }
-
-    .avatar {
-        margin-top: 50px;
-        margin-bottom: 0px;
+    .aboutContainer img {
         height: 250px;
         width: 250px;
     }
+}
 
-    .aboutInfo {
-        font-size: 20px;
+@media screen and (max-width: 700px) {
+    .aboutContainer  {
+        flex-direction: column;
+        padding-top: 10%;
+    }
+    .infoContainer {
+        width: 90%;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .avatar {
-        display: none;
+@media screen and (max-width: 510px) {
+    .aboutContainer img {
+        height: 30%;
+        width: auto;
     }
-}
-
-@media screen and (max-width: 481px) {
-    .avatar {
-        display: none;
+    .infoContainer, .infoContainer p {
+        font-size: 13px;
     }
-
-    .aboutInfo {
-        font-size: 15px;
-    }
-
-    .containerBackground {
-        margin: 50px;
-        font-size: 15px;
+    .infoContainer {
+        padding: 10px;
     }
 }
